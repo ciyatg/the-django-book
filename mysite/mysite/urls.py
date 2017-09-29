@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url #url which uses a regular expression to pattern match the URL in your browser to a module in your Django project.
 from django.contrib import admin #This line calls the function admin from the django.contrib module
 from mysite.views import hello #We imported the hello view from its module – mysite/views.py
-from mysite.views import hello, current_datetime
+from mysite.views import hello, current_datetime, hours_ahead
 
 urlpatterns = [# This includes a list of url() instances.
     url(r'^admin/', admin.site.urls),
